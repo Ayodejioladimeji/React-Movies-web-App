@@ -1,0 +1,168 @@
+/* THE MOVIES CSS */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#22254b;
+    color:white;
+    font-family:"poppins", sans-serif;
+    margin:0;
+}
+
+.Movie-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.head-container{
+    background:orangered;
+}
+
+header{
+    padding:15px;
+    text-align:right;
+    padding-top:90px;
+}
+
+header input{
+    background:#151c58;
+    padding:8px 25px;
+    color:white;
+    border:none;
+    outline:none;
+    border:1px solid #00ff00;
+}
+
+header ::-webkit-input-placeholder{
+    color:white;
+    font-size:11px;
+}
+
+
+.movie{
+    background:#373b69;
+    width:280px;
+    margin:1rem;
+    overflow:hidden;
+    position:relative;
+}
+
+.movie img{
+    width:100%;
+    object-fit: cover;
+    height:400px;
+}
+
+.movie-info{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+}
+
+.movie-info h3{
+    margin:0;
+    font-size:15px;
+    font-family: monospace;
+    font-weight:normal;
+    color:#00ff00;
+}
+
+.movie-over{
+    position: absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    background:white;
+    color:#151c58;
+    padding:1rem;
+    transform:translateY(100%);
+    transition:transform 0.4s ease-in-out;
+    overflow:auto;
+    max-height:100%;
+    border-radius:25px 0 0 0;
+    font-size:15px;
+    font-family:monospace;
+    border-bottom:5px solid #00ff00;
+}
+
+.movie:hover .movie-over{
+    transform:translateY(0%)
+}
+
+.movie-over h2{
+    border-bottom:1px solid #0a0e3b;
+}
+
+.tag{
+    background:#0a0e3b;
+    padding:0.5rem;
+}
+
+.tag.green{
+    color:greenyellow;
+}
+.tag.orange{
+    color:orange;
+}
+.tag.red{
+    color:red;
+}
+
+
+/* ============================== */
+/* ============================== */
+/* THE SECTION OF THE MEDIA QUERY */
+@media screen and (max-width:425px){
+    header{
+        text-align:center;
+    }
+    header input{
+        background:#080b27;
+        border:none;
+    }
+
+    .movie{
+        width:300px;
+    }
+    
+    .movie img{
+        height:350px;
+    }
+    
+    .movie-info{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:1rem;
+    }
+    
+    .movie-info h3{
+        font-size:13px;
+    }
+    
+    .movie-over{
+        font-size:14px;
+        padding:1rem;
+    }
+    
+    .movie:hover .movie-over{
+        transform:translateY(0%)
+    }
+    
+    .movie-over h2{
+        border-bottom:1px solid #0a0e3b;
+    }
+    
+    .tag{
+        background:#0a0e3b;
+        padding:0.5rem;
+    }
+    
+   
+}
