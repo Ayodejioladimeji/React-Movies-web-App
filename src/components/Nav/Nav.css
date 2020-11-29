@@ -1,69 +1,82 @@
 /* THE SECTION OF THE NAV CSS */
 
-.navbar{
-    background:rgb(12, 12, 114);
-    height:9vh;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    padding:15px;
-    width:100%;
-    z-index:14;
-    position:fixed;
+.navbar {
+  background: rgb(12, 12, 114);
+  height: 11vh;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  z-index: 14;
+  position: fixed;
 }
 
-.nav-icon{
-    width:20%;
- }
-
- .icon-link{
-    color: #00ff00;
-    display: flex;
-    text-decoration:none;
-    /* text-shadow:1px 1px #00ff00; */
-    display: flex;
-
+.nav-icon {
+  width: 20%;
 }
 
-.icon-link h2{
-    font-family:cursive;
-    font-size:20px;
+.icon-link {
+  color: #00ff00;
+  display: flex;
+  text-decoration: none;
+  /* text-shadow:1px 1px #00ff00; */
+  display: flex;
 }
 
-.icon-link img{
-    width:20px;
-    height:20px;
-    margin-left:10px;
-    margin-top:5px;
+.icon-link h2 {
+  font-family: cursive;
+  font-size: 20px;
 }
 
-.menu-icon{
-    display:none;
+.icon-link img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
-.nav-list{
-    width:50%;
-    font-family:cursive;
-    font-size:18px;
-    padding:5px;
+.menu-icon {
+  display: none;
 }
 
-.menu-lists{
-    display:flex;
-    justify-content: space-evenly;
-    list-style:none;
-    align-items:center;
+.nav-list {
+  width: 50%;
+  font-family: cursive;
+  font-size: 18px;
+  padding: 5px;
 }
 
-.lists{
-    display:flex;
-    align-items:center;
-    color:white;
-    text-decoration:none;
-    transition:.3s ease-in-out;
+.menu-lists {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
 }
-.lists:hover{
-    color:white;
-    transform:scale(1.2);
-    text-decoration:none;
+
+.navbar input {
+  background: #151c58;
+  padding: 8px 25px;
+  color: white;
+  border: none;
+  outline: none;
+  border: 1px solid #00ff00;
+}
+
+.navbar ::-webkit-input-placeholder {
+  color: white;
+  font-size: 11px;
+}
+
+.lists {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.lists:hover {
+  color: white;
+  transform: scale(1.2);
+  text-decoration: none;
 }

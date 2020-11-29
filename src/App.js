@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import { BrowserRouter as Router } from "react-router-dom";
-
 import Movies from "./components/Movies/Movie";
 import Nav from "./components/Nav/Nav";
 import "./App.css";
@@ -59,14 +57,14 @@ function App() {
   };
 
   return (
-    <Router>
+    <>
       <Nav
         searchTerm={searchTerm}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />
       <Movies movies={movies} />
-    </Router>
+    </>
   );
 }
 
