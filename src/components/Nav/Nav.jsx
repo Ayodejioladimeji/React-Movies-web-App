@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import "./Nav.css";
 import "./NavQuery.css";
 import icon from "./layomi.png";
