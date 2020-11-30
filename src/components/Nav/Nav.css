@@ -30,8 +30,8 @@
 }
 
 .icon-link img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-left: 10px;
   margin-top: 5px;
 }
@@ -61,6 +61,7 @@
   border: none;
   outline: none;
   border: 1px solid #00ff00;
+  margin-top:5px;
 }
 
 .navbar ::-webkit-input-placeholder {
