@@ -43,9 +43,6 @@ function App() {
         .then((res) => res.json())
         .then((data) => {
           setMovies(data.results);
-          if (data.length === 0) {
-            return <p>Not found</p>;
-          }
         });
       setSearchTerm("");
     }
